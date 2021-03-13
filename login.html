@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block white %}
+{% load socialaccount %}
+{% providers_media_js %}
+<!DOCTYPE html>
+<center>  
+<div>
+  <br><br>
+  <a href="{% provider_login_url "google" %}"><button class="button" title="Sign in with Google">GOOGLE CONNECT</button></a>
+</div>
+ </center>
+ {% endblock %}
+ 
+

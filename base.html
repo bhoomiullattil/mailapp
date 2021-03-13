@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NIMBLE</title>
+	 <link rel="stylesheet"                 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+.header {
+  background-color: #ccd9ff;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #00ace6;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #003366;
+  text-align: center;
+  padding: 16px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ffffe6;
+  color: blue;
+}
+#grad{ 
+	max-height: 900PX;
+		background-image: linear-gradient(#E7E3D4,#C4DBF6);
+		height:18000 px;
+	}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #003399;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #c0c0c0;
+color:#000103;
+}
+
+.button:active {
+  background-color: #ff6699;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+</style>
+<body div id="grad">
+	<div class="header">
+		<p style="font-size:50px; color:#538b01; font-weight:bold;font-family:cursive ;font-style:italic;word-spacing:-90px;">
+		<span style="color:#A64AC9">N</span>
+		<span style="color:#78244C">I</span>
+		<span style="color:#F76C6C">M</span>
+		<span style="color:#86C232">B</span>
+		<span style="color:#2E9CCA">L</span>
+		<span style="color:#182628">E</span></p>
+	</div>
+
+<div class="topnav">
+	<b><i><a href="{% url 'sendmail' %}">Send Mail</a>
+    <a href="{% url 'unread' %}">View Unread</a>
+    <a href="searchmail">Search Mail</a>
+    <a href="{% url 'account_logout' %}">LogOut</a></i></b>
+</div>
+{% block blue %}
+{% endblock %}
+</body>
+</html>

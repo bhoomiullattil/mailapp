@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NIMBLE</title>
+</head>
+<style>
+.header {
+
+  padding:20px;
+  text-align: left;
+}
+
+#grad{ 
+	max-height: 900PX;
+		background-image: linear-gradient(#E7E3D4,#C4DBF6);
+		height:18000 px;
+	}
+	
+.column {
+  float:center ;
+  width: 100%;
+  display: block;
+  color: #000066;
+  text-align: center;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #003399;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #c0c0c0;
+color:#000103;
+}
+
+.button:active {
+  background-color: #ff6699;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.footer {
+
+  text-align: center;
+  background-position: bottom;
+  color: #000080;
+  padding:0.05px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+</style>
+</head>
+<body div id="grad">
+	<div class="header">
+		
+		<p style="font-size:50px; color:#538b01; font-weight:bold;font-family:cursive ;font-style:italic;word-spacing:-90px;">
+		<span style="color:#A64AC9;margin:0;padding:0;border:1px;letter-spacing: 0px">N</span>
+		<span style="color:#78244C;margin:0;padding:0;border:1px;letter-spacing: 0px">I</span>
+		<span style="color:#F76C6C">M</span>
+		<span style="color:#86C232">B</span>
+		<span style="color:#2E9CCA">L</span>
+		<span style="color:#182628">E</span></p>
+	</div>
+<div class="footer">
+
+<MARQUEE>
+  <h1>Instant Mail Services</h1></MARQUEE>
+</div>
+
+{% block white %}
+{% endblock %}
+</body>
+</html>
+</html>

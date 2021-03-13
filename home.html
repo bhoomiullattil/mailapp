@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+{% block white %}
+<title>INSTAMAIL</title>
+{% if user.username != NULL %}
+  <h1>Hi {{ user.username }}!Choose what you would like to do from the below options.</h1><br><br>
+  <div class="column">
+	<b><i><a href="{% url 'sendmail' %}"><button class="button">Send Mail</button></a><br><br>
+    <a href="{% url 'unread' %}"><button class="button">View Unread</button></a><br><br>
+    <a href="searchmail"><button class="button">Search Mail</button></a><br><br>
+    <a href="{% url 'account_logout' %}"><button class="button">LogOut</button></a></i></b>
+</div>
+  {% else %}
+  <h1>Ensure you have Logged in!!</h1>
+  {% endif %}
+ {% endblock %}

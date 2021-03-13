@@ -1,0 +1,21 @@
+{% extends "template.html"%}
+{% block white %}
+<h1>If you click LOG OUT ,you will be signed out of your account allover the device</h1> 
+<a href="https://www.google.com/accounts/Logout" target="myiframe"><button>LOGOUT</button></a>
+
+<script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+
+<iframe name="myiframe" style="display:none" onload="redirect()"></iframe>
+
+<script>
+  function redirect() {
+    window.location = '{% url 'homes' %}';
+  };
+</script>
+{% endblock %}
+
+
